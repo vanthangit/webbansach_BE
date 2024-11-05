@@ -1,9 +1,11 @@
 package vn.titv.webbansach_BE.dao;
 
 import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 import vn.titv.webbansach_BE.entity.Quyen;
 
-@Repository
-public interface QuyenRepository extends JpaAttributeConverter<Quyen, Integer> {
+@RepositoryRestResource(path = "quyen")
+public interface QuyenRepository extends JpaRepository<Quyen, Integer> {
 }
