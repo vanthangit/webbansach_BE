@@ -25,7 +25,7 @@ public class Sach {
     private double giaNiemYet;
     @Column(name = "gia_ban")
     private double giaBan;
-    @Column(name = "do_luong")
+    @Column(name = "so_luong")
     private int soLuong;
     @Column(name = "trung_binh_xep_hang")
     private double trungBinhXepHang;
